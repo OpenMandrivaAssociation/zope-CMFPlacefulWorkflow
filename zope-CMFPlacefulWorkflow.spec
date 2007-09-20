@@ -3,7 +3,7 @@
 %define name    zope-%{Product}
 %define version 1.2.0
 %define bad_version %(echo %{version} | sed -e 's/\\./-/g')
-%define release %mkrel 1
+%define release %mkrel 2
 
 %define zope_minver     2.7
 %define zope_home       %{_prefix}/lib/zope
@@ -18,7 +18,7 @@ Group:      System/Servers
 URL:        http://plone.org/products/%{product}
 Source:     http://plone.org/products/%{product}/releases/%{version}/%{product}-%{bad_version}.tgz
 Requires:   zope >= %{zope_minver}
-Requires:   plone >= 2.0.5
+Requires:   zope-Plone >= 2.0.5
 BuildArch:  noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
