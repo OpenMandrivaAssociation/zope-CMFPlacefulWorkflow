@@ -1,17 +1,17 @@
 %define Product CMFPlacefulWorkflow
 %define product cmfplacefulworkflow
 %define name    zope-%{Product}
-%define version 1.2.0
+%define version 1.2.1
 %define bad_version %(echo %{version} | sed -e 's/\\./-/g')
-%define release %mkrel 2
+%define release %mkrel 1
 
 %define zope_minver     2.7
 %define zope_home       %{_prefix}/lib/zope
 %define software_home   %{zope_home}/lib/python
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:	    %{name}
+Version:    %{version}
+Release:    %{release}
 Summary:    CMFPlacefulWorkflow extends Plone with placeful workflow support
 License:    GPL
 Group:      System/Servers
