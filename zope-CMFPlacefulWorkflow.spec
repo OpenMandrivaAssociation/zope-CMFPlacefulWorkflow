@@ -20,7 +20,6 @@ Source:     http://plone.org/products/%{product}/releases/%{version}/%{product}-
 Requires:   zope >= %{zope_minver}
 Requires:   zope-Plone >= 2.0.5
 BuildArch:  noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description 
 CMF Placeful Workflow is a Plone product allowing to define workflow
